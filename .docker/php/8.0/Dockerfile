@@ -56,4 +56,9 @@ WORKDIR /var/www
 # Change CMD to have cron running
 RUN echo "#!/bin/sh\ncron\nphp-fpm" > /usr/bin/run
 RUN chmod u+x /usr/bin/run
+
+RUN apt update
+RUN apt install nodejs
+RUN apt install npm
+RUN chown -R root ./
 CMD ["run"]
