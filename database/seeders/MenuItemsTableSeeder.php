@@ -27,7 +27,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-boat',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => null,
                 'order'      => 1,
             ])->save();
@@ -43,7 +43,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-images',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => null,
                 'order'      => 5,
             ])->save();
@@ -59,7 +59,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-person',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => null,
                 'order'      => 3,
             ])->save();
@@ -75,7 +75,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-lock',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => null,
                 'order'      => 2,
             ])->save();
@@ -90,7 +90,7 @@ class MenuItemsTableSeeder extends Seeder
             $toolsMenuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-tools',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => null,
                 'order'      => 9,
             ])->save();
@@ -106,7 +106,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-list',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => $toolsMenuItem->id,
                 'order'      => 10,
             ])->save();
@@ -122,7 +122,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-data',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => $toolsMenuItem->id,
                 'order'      => 11,
             ])->save();
@@ -138,7 +138,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-compass',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => $toolsMenuItem->id,
                 'order'      => 12,
             ])->save();
@@ -154,7 +154,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-bread',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => $toolsMenuItem->id,
                 'order'      => 13,
             ])->save();
@@ -170,7 +170,7 @@ class MenuItemsTableSeeder extends Seeder
             $menuItem->fill([
                 'target'     => '_self',
                 'icon_class' => 'voyager-settings',
-                'Цвет'      => null,
+                'color'      => null,
                 'parent_id'  => null,
                 'order'      => 14,
             ])->save();

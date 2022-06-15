@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Api\Randomizer\ColorController;
+use App\Http\Controllers\Api\Randomizer\TagController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +19,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::get('/random', [ColorController::class, 'getRandomColor']);
+Route::get('/tags', [TagController::class, 'getTags']);
